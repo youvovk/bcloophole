@@ -1,0 +1,147 @@
+.MoreNews {
+    background: #192024;
+    padding: 80px 10px;
+
+    @media (max-width: 575px) {
+        padding: 14px 0;
+    }
+    h2 {
+        font-size: 29px;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @media (max-width: 575px) {
+            font-size: 23px;
+            letter-spacing: 0px;
+            margin-bottom: 4px;
+        }
+    }
+    h3 {
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .more-news_description {
+        padding: 15px 23px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 300;
+            margin-top: 10px;
+            min-height: 75px;
+            @media (max-width: 991px) {
+                margin-top: 0;
+            }
+        }
+        .more-news_text {
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: 1px;
+            text-align: center;
+            @media (max-width: 991px) {
+                margin-bottom: 13px;
+                font-size: 13px;
+                line-height: 21px;
+                letter-spacing: 0px;
+            }
+        }
+        .link {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 10px 30px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            color: #fff;
+            line-height: 21px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            background: transparent;
+            outline: none;
+            &:hover {
+                border:1px solid #2e9dff;
+                color: #2e9dff;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.modal-dialog {
+    max-width: 400px;
+    margin: 0;
+    padding: 25px;
+    border: 3px solid #e2a62b;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    .btn-close {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        margin-left: -44px;
+        font-size: 12px;
+        letter-spacing: 6px;
+        font-weight: 700;
+        line-height: 1;
+        color: #ffffff;
+        text-shadow: 0 1px 0 #fff;
+        border: none;
+        opacity: .2;
+        padding: 12px;
+        border-radius: 10px;
+        background: transparent;
+        -webkit-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+        cursor: pointer;
+        &:hover {
+            background: hsla(0, 0%, 100%, .17);
+            color: #000;
+            opacity: .5;
+        }
+    }
+}
+.modal-content {
+    border: none;
+}
+.modal {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 0!important;
+}
