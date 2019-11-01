@@ -59,7 +59,7 @@ class FirstRegform extends Component {
     render() {
 
         let languageManager = this.props.languageManager();
-
+        console.log(this.context.firstName)
         return (
             <div className="FirstRegform">
                 <img src={logo} alt="logo" className="logo"/>
@@ -68,8 +68,8 @@ class FirstRegform extends Component {
                         {this.state.errors && <div className="errors">
                             {this.state.errors[0]}
                         </div>}
-                        <input className="inputfield fname" type="text" name="firstName" onChange={(e) => {this.context.getValueFromInputs(e)}} placeholder={languageManager.fname} />
-                        <input className="inputfield email" type="text" name="email" onChange={(e) => {this.context.getValueFromInputs(e)}} placeholder={languageManager.email} />
+                        <input className="inputfield fname" type="text" name="firstName" value={this.context.firstName} onChange={(e) => {this.context.getValueFromInputs(e)}} placeholder={languageManager.fname} />
+                        <input className="inputfield email" type="text" name="email" value={this.context.email} onChange={(e) => {this.context.getValueFromInputs(e)}} placeholder={languageManager.email} />
                         <Link to="/members" onClick={this.saveData} className='start'>{languageManager.button}</Link>
                     </div>
                 </div>

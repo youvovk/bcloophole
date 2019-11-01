@@ -35,7 +35,7 @@ class App extends ReactQueryParams {
     };
 
     getValueFromInputs = e => {
-        this.setState({ [e.target.name] : e.target.value});
+        this.setState({ [e.target.name] : e.target.value.replace(/^\s+|\s/g, '')});
     };
 
     pageHandler = (page) => {
